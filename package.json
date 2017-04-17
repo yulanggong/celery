@@ -1,0 +1,28 @@
+{
+  "name": "celery",
+  "version": "1.0.0",
+  "description": "🌿于老爷子的芹菜",
+  "main": "celery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulanggong/celery.git"
+  },
+  "keywords": [
+    "bookmarklet",
+    "解除网页禁用复制"
+  ],
+  "author": "yulanggong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yulanggong/celery/issues"
+  },
+  "homepage": "https://github.com/yulanggong/celery#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "^2.8.22"
+  }
+}
