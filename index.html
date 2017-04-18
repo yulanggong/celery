@@ -6,33 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>🌿于老爷子的芹菜</title>
   <style>
-  .btn {
-    text-indent: -500px;
-    width: 200px;
-    display: inline-block;
-    background: #f80;
-    color: #fff;
-    padding: 12px;
-    text-decoration: none;
-    position: relative;
-    cursor: move;
-  }
-  .btn:before {
-    content: '拖动到书签栏';
-    position: absolute;
-    text-indent: 0;
-    text-align: center;
-    left:12px;
-    top: 12px;
-    height: 16px;
-    width: 200px;
-  }
+    body {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .btn {
+      text-indent: -500px;
+      width: 200px;
+      display: inline-block;
+      background: #6BB447;
+      color: #fff;
+      padding: 12px;
+      text-decoration: none;
+      position: relative;
+      cursor: move;
+    }
+    .btn:before {
+      content: '拖动到书签栏';
+      position: absolute;
+      text-indent: 0;
+      text-align: center;
+      left:12px;
+      top: 12px;
+      height: 16px;
+      width: 200px;
+    }
+    blockquote {
+      border-left: 5px solid #ddd;
+      color: #666;
+      padding-left: 20px;
+      margin-left: 0;
+    }
   </style>
 </head>
 <body>
   <h1>🌿于老爷子的芹菜</h1>
   <p>一个解除网页禁用复制的小书签。</p>
+  <blockquote>一般的锁抬手拿根面条就能捅开，银行保险柜一根芹菜就捅开了，拿包方便面能出入任何一个小区。—— 郭德纲相声</blockquote>
   <a class=btn href="javascript:!function t(e){e.querySelectorAll('*').forEach(function(e){e.oncontextmenu=e.ondragstart=e.onselectstart=e.onselect=e.oncopy=e.onbeforecopy=e.onmouseup=null;try{e.contentDocument&&t(e.contentDocument)}catch(t){}});var n=e.createElement('style');n.innerHTML='*{-webkit-user-select:text!important;-moz-user-select:text!important;user-select:text!important;}',e.body.appendChild(n)}(document);">🌿</a>
-  <p>如果无效可以用 Ctrl + P，在打印预览里复制</p>
+  <p>如果无效可以用 Ctrl + P，在打印预览里复制。</p>
 </body>
 </html>
