@@ -1,6 +1,6 @@
 {
   "name": "celery",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🌿于老爷子的芹菜",
   "main": "celery.js",
   "scripts": {
@@ -13,7 +13,9 @@
   },
   "keywords": [
     "bookmarklet",
-    "解除网页禁用复制"
+    "解除网页禁用复制",
+    "remove-copy-restriction",
+    "allow-copy"
   ],
   "author": "yulanggong",
   "license": "MIT",
