@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <style>
+    #style-user-select {
+      user-select: none;
+    }
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <button>🌿</button>
+  <p id="style-user-select">样式 user-select</p>
+  <p id="event-lisener">事件监听</p>
+  <p id="dom-0">DOM 0 事件</p>
+  <p>Document 事件监听</p>
+  <script>
+    // 防止循环嵌套
+    if (self === top) {
+      document.write('<iframe src="test.html"></iframe>')
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+  <script>
+    var events = 'contextmenu dragstart selectstart select copy beforecopy mouseup';
+    $('#event-lisener, iframe').on(events, function(e){
+      e.preventDefault();
+      return false;
+    })
+
+    var element = $('#dom-0')[0];
+    events.split(' ').forEach(function(event){
+      element['on' + event] = function(){return false};
+    })
+    
+    events.split(' ').forEach(function(event){
+      // 捕获
+      document.addEventListener(event, function(e){
+        e.preventDefault();
+      }, true);
+      // 冒泡
+      document.addEventListener(event, function(e){
+        e.preventDefault();
+      }, false);
+    })
+
+    // http://life.tw/?app=view&no=585781
+    
+    $('button').on('click', function(){
+      var script = document.createElement('script');
+      script.src = 'celery.js';
+      document.head.appendChild(script);
+    });
+  </script>
+</body>
+</html>
