@@ -71,6 +71,7 @@
 
   var old = doc[documentElement][innerHTML];
   doc.open();
+  doc.write('<!DOCTYPE html>');
   doc.close();
   doc[documentElement][innerHTML] = old;
 
