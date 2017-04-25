@@ -5,7 +5,7 @@
 
 ## 安装
 
-[安装](https://yulanggong.github.io/celery)
+[安装](http://renwenlong.com/celery)
 
 ## 问题反馈
 
