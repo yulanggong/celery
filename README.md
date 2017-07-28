@@ -10,3 +10,5 @@
 ## 问题反馈
 
 [Issues](https://github.com/yulanggong/celery/issues)
+
+部分网站通过设置严格的 CSP 禁止了小书签的执行，可以通过[禁用 CSP](https://stackoverflow.com/questions/27323631)来执行小书签。
